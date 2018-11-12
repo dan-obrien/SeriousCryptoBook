@@ -28,3 +28,18 @@ Where:
 t - limit on the number of operations that an attacker will carry out
 ε - (epsilon) limit on the probability of success of an attack
 
+## Generating Random Keys ##
+
+Three ways:
+
+1. Randomly
+2. From a password; uses a key derivation function (KDF)
+3. Through a *key agreement protocol*; series of message exchanges between two parties resulting in a key
+
+### Generating Symmetric Keys ###
+`openssl rand 16 -hex`
+Generating 16 bytes of randomness and output as hex
+
+### Geerating Asymmetric Keys ###
+`openssl genrsa 4096`
+Generate a 4096-bit RSA private key
